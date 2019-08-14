@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:   # it is going to have a series of different commands that get executed before our tests are ran.
-  - docker build -t sw3196/docker-react -f Dockerfile.dev
+  - docker build -t sw3196/docker-react -f Dockerfile.dev .  # cannot forget the last dot!!!
 
 script: # the script section is supposed to contain all the different commands that need to be executed to
         # run our test suite.
